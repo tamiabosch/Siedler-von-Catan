@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<Pane fx:id="windowPane" prefHeight="765.0" prefWidth="1260.0" stylesheets="@/styleFX.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.BoardViewController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="634.0" prefWidth="1260.0">
+         <children>
+            <VBox fx:id="playerBox" prefHeight="473.0">
+               <children>
+                  <VBox fx:id="playerInfoBox2" alignment="CENTER">
+                     <children>
+                        <Label fx:id="labelName2" alignment="CENTER" prefHeight="17.0" prefWidth="223.0" styleClass="playerBoxNameLabel" text="Name" />
+                        <HBox spacing="10.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label styleClass="playerBoxLabel" text="KARTEN: " />
+                                    <Label styleClass="playerBoxLabel" text="ROHSTOFFE: " />
+                                    <Label styleClass="playerBoxLabel" text="RITTER: " />
+                                    <Label styleClass="playerBoxLabel" text="SIEGPUNKTE: " />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="7.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="BOTTOM_CENTER">
+                                 <children>
+                                    <Label fx:id="cardValuePlayer2" styleClass="playerBoxLabel" text="x" />
+                                    <Label fx:id="resourcesPlayer2" styleClass="playerBoxLabel" text="x" />
+                                    <Label fx:id="knightPlayer2" styleClass="playerBoxLabel" text="x" />
+                                    <Label fx:id="victoryPointsPlayer2" styleClass="playerBoxLabel" text="x" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" spacing="4.0">
+                                 <children>
+                                    <ImageView fx:id="tradeRoadBadgeP2" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+                                    <ImageView fx:id="knightForceBadgeP2" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox fx:id="playerInfoBox3" alignment="CENTER" prefWidth="198.0">
+                     <children>
+                        <Label fx:id="labelName3" alignment="CENTER" prefHeight="17.0" prefWidth="226.0" styleClass="playerBoxNameLabel" text="Name" />
+                        <HBox spacing="10.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label styleClass="playerBoxLabel" text="KARTEN: " />
+                                    <Label styleClass="playerBoxLabel" text="ROHSTOFFE: " />
+                                    <Label styleClass="playerBoxLabel" text="RITTER: " />
+                                    <Label styleClass="playerBoxLabel" text="SIEGPUNKTE: " />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="7.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="BOTTOM_CENTER">
+                                 <children>
+                                    <Label fx:id="cardValuePlayer3" styleClass="playerBoxLabel" text="x" />
+                                    <Label fx:id="resourcesPlayer3" styleClass="playerBoxLabel" text="x" />
+                                    <Label fx:id="knightPlayer3" styleClass="playerBoxLabel" text="x" />
+                                    <Label fx:id="victoryPointsPlayer3" styleClass="playerBoxLabel" text="x" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" spacing="4.0">
+                                 <children>
+                                    <ImageView fx:id="tradeRoadBadgeP3" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+                                    <ImageView fx:id="knightForceBadgeP3" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox fx:id="playerInfoBox4" alignment="CENTER">
+                     <children>
+                        <Label fx:id="labelName4" alignment="CENTER" prefHeight="17.0" prefWidth="237.0" styleClass="playerBoxNameLabel" text="Name" />
+                        <HBox spacing="10.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label styleClass="playerBoxLabel" text="KARTEN: " />
+                                    <Label styleClass="playerBoxLabel" text="ROHSTOFFE: " />
+                                    <Label styleClass="playerBoxLabel" text="RITTER: " />
+                                    <Label styleClass="playerBoxLabel" text="SIEGPUNKTE: " />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="7.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="BOTTOM_CENTER">
+                                 <children>
+                                    <Label fx:id="cardValuePlayer4" styleClass="playerBoxLabel" text="x" />
+                                    <Label fx:id="resourcesPlayer4" styleClass="playerBoxLabel" text="x" />
+                                    <Label fx:id="knightPlayer4" styleClass="playerBoxLabel" text="x" />
+                                    <Label fx:id="victoryPointsPlayer4" styleClass="playerBoxLabel" text="x" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" spacing="4.0">
+                                 <children>
+                                    <ImageView fx:id="tradeRoadBadgeP4" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+                                    <ImageView fx:id="knightForceBadgeP4" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+            <Pane fx:id="boardOfCatan" layoutX="220.0" prefHeight="636.0" prefWidth="822.0" styleClass="boardView">
+               <children>
+                  <ImageView fx:id="shipImage" fitHeight="91.0" fitWidth="134.0" layoutX="678.0" layoutY="45.0" onMouseReleased="#shipImagePressed" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <VBox fx:id="buttonBox" alignment="TOP_CENTER" cacheShape="false" centerShape="false" layoutX="1049.0" maxWidth="214.0" prefHeight="476.0" prefWidth="214.0" scaleShape="false" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="134.0" prefWidth="214.0" spacing="5.0">
+                     <children>
+                        <Label alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" text="BAUEN">
+                           <tooltip>
+                              <Tooltip consumeAutoHidingEvents="false" contentDisplay="GRAPHIC_ONLY" text="Empty Tooltip">
+                                 <graphic>
+                                    <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/Baukosten.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Tooltip>
+                           </tooltip>
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/info.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Button fx:id="settlementButton" mnemonicParsing="false" onMouseReleased="#drawViableSettlements" prefHeight="27.0" prefWidth="180.0" styleClass="gameButton" text="SIEDLUNG">
+                           <tooltip>
+                              <Tooltip consumeAutoHidingEvents="false" contentDisplay="GRAPHIC_ONLY" text="Empty Tooltip">
+                                 <graphic>
+                                    <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/Baukosten.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Tooltip>
+                           </tooltip>
+                        </Button>
+                        <Button fx:id="cityButton" mnemonicParsing="false" onMouseReleased="#drawViableCity" prefHeight="27.0" prefWidth="180.0" styleClass="gameButton" text="STADT">
+                           <tooltip>
+                              <Tooltip consumeAutoHidingEvents="false" contentDisplay="GRAPHIC_ONLY" text="Empty Tooltip">
+                                 <graphic>
+                                    <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/Baukosten.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Tooltip>
+                           </tooltip>
+                        </Button>
+                        <Button fx:id="drawStreetsButton" mnemonicParsing="false" onMouseReleased="#streetButtonOnAction" prefHeight="27.0" prefWidth="180.0" styleClass="gameButton" text="STRASSE">
+                           <tooltip>
+                              <Tooltip consumeAutoHidingEvents="false" contentDisplay="GRAPHIC_ONLY" text="Empty Tooltip">
+                                 <graphic>
+                                    <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/Baukosten.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Tooltip>
+                           </tooltip>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Separator maxWidth="212.0" prefHeight="11.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <VBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <Button fx:id="tradeButton" mnemonicParsing="false" onMouseReleased="#openTradeWindow" prefHeight="27.0" prefWidth="180.0" styleClass="gameButton" text="HANDEL">
+                           <tooltip>
+                              <Tooltip text="Öffnet das Fenster zum Handeln." />
+                           </tooltip></Button>
+                        <Button fx:id="harborButton" mnemonicParsing="false" onMouseReleased="#openHarborTrade" prefHeight="27.0" prefWidth="180.0" styleClass="gameButton" text="SEEHANDEL">
+                           <tooltip>
+                              <Tooltip text="Erst hier drauf klicken, dann entweder Hafen oder Schiff (erscheint bei 4:1) wählen" />
+                           </tooltip></Button>
+                        <Button fx:id="developmentCardButton" mnemonicParsing="false" onMouseReleased="#buyDevelopmentCard" prefHeight="27.0" prefWidth="180.0" styleClass="gameButton" text="KARTE KAUFEN">
+                           <tooltip>
+                              <Tooltip text="Entwicklungskarte kaufen." />
+                           </tooltip></Button>
+                        <Button fx:id="myDevCardsButton" mnemonicParsing="false" onMouseReleased="#openMyDevelopmentCard" prefHeight="27.0" prefWidth="180.0" styleClass="gameButton" text="MEINE KARTEN">
+                           <tooltip>
+                              <Tooltip text="Eigene Entwicklungskarten ansehen." />
+                           </tooltip></Button>
+                        <Button fx:id="finishMove" mnemonicParsing="false" onMouseReleased="#finishMove" prefHeight="27.0" prefWidth="180.0" styleClass="gameButton" text="ZUG BEENDEN">
+                           <tooltip>
+                              <Tooltip text="Zug Beenden." />
+                           </tooltip></Button>
+                        <Button fx:id="musicButton" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#handleMusic" prefHeight="27.0" prefWidth="180.0" text="Button">
+                           <graphic>
+                              <ImageView fx:id="musicImage" fitHeight="17.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/play.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="183.0" spacing="5.0">
+                     <children>
+                        <ImageView fx:id="dice1" fitHeight="50.0" fitWidth="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="dice2" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="2.0" layoutY="445.0" pickOnBounds="false" prefHeight="191.0" prefWidth="215.0" styleClass="devCardBox">
+               <children>
+                  <HBox prefHeight="125.0" prefWidth="217.0" spacing="40.0">
+                     <children>
+                        <VBox spacing="10.0">
+                           <children>
+                              <Label styleClass="whiteLabel" text="SIEGPUNKTE">
+                                 <tooltip>
+                                    <Tooltip contentDisplay="GRAPHIC_ONLY" text="Empty Tooltip">
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@/VictoryPoint.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Tooltip>
+                                 </tooltip>
+                              </Label>
+                              <Label styleClass="whiteLabel" text="RITTER">
+                                 <tooltip>
+                                    <Tooltip contentDisplay="GRAPHIC_ONLY" text="Empty Tooltip">
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@/Knight.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Tooltip>
+                                 </tooltip>
+                              </Label>
+                              <Label styleClass="whiteLabel" text="STRASSENBAU">
+                                 <tooltip>
+                                    <Tooltip contentDisplay="GRAPHIC_ONLY" text="Empty Tooltip">
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@/RoadBuilding.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Tooltip>
+                                 </tooltip>
+                              </Label>
+                              <Label styleClass="whiteLabel" text="MONOPOL">
+                                 <tooltip>
+                                    <Tooltip contentDisplay="GRAPHIC_ONLY" text="Empty Tooltip">
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@/Monopoly.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Tooltip>
+                                 </tooltip>
+                              </Label>
+                              <Label styleClass="whiteLabel" text="ERFINDUNG">
+                                 <tooltip>
+                                    <Tooltip contentDisplay="GRAPHIC_ONLY" text="Empty Tooltip">
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@/YearOfPlenty.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Tooltip>
+                                 </tooltip>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox spacing="10.0">
+                           <children>
+                              <Label fx:id="victoryPoint" styleClass="whiteLabel" text="x" />
+                              <Label fx:id="knightLabel" styleClass="whiteLabel" text="x" />
+                              <Label fx:id="roadBuildingLabel" styleClass="whiteLabel" text="x" />
+                              <Label fx:id="monopolyLabel" styleClass="whiteLabel" text="x" />
+                              <Label fx:id="yearOfPlentyLabel" styleClass="whiteLabel" text="x" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <VBox fx:id="playerInfoBox1" alignment="CENTER" layoutX="1042.0" layoutY="499.0" maxWidth="221.0" minWidth="212.0" prefHeight="134.0" prefWidth="221.0">
+               <children>
+                  <Label fx:id="labelName1" alignment="CENTER" prefHeight="24.0" prefWidth="214.0" styleClass="playerBoxNameLabel" text="Name" />
+                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label fx:id="cardLabelPlayer1" styleClass="playerBoxLabel" text="KARTEN: " />
+                              <Label fx:id="resourcesLabelPlayer1" styleClass="playerBoxLabel" text="ROHSTOFFE: " />
+                              <Label fx:id="knightLabelPlayer1" styleClass="playerBoxLabel" text="RITTER: " />
+                              <Label fx:id="victoryPointsLabelPlayer1" styleClass="playerBoxLabel" text="SIEGPUNKTE: " />
+                           </children>
+                           <HBox.margin>
+                              <Insets top="7.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="BOTTOM_CENTER">
+                           <children>
+                              <Label fx:id="cardValuePlayer1" styleClass="playerBoxLabel" text="x" />
+                              <Label fx:id="resourcesPlayer1" styleClass="playerBoxLabel" text="x" />
+                              <Label fx:id="knightPlayer1" styleClass="playerBoxLabel" text="x" />
+                              <Label fx:id="victoryPointsPlayer1" styleClass="playerBoxLabel" text="x" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" spacing="4.0">
+                           <children>
+                              <ImageView fx:id="tradeRoadBadgeP1" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+                              <ImageView fx:id="knightForceBadgeP1" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="-1.0" layoutY="634.0" prefHeight="119.0" prefWidth="1260.0">
+         <children>
+            <VBox prefHeight="119.0" prefWidth="741.0" spacing="5.0">
+               <children>
+                  <ScrollPane fx:id="scrollPane" prefHeight="200.0" prefWidth="664.0">
+                     <content>
+                        <TextFlow fx:id="chatWindow" prefHeight="89.0" prefWidth="722.0">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding></TextFlow>
+                     </content>
+                  </ScrollPane>
+                  <HBox prefHeight="28.0" prefWidth="617.0">
+                     <children>
+                        <TextField fx:id="chatTextInput" prefHeight="28.0" prefWidth="661.0" />
+                        <Button fx:id="sendButton" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#sendButtonPressed" onKeyReleased="#sendButtonPressed" prefHeight="27.0" prefWidth="84.0" text="Send" />
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="119.0" prefWidth="508.0" HBox.hgrow="NEVER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="grainLabel" contentDisplay="CENTER" text="Label" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/Card1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Monospaced Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="lumberLabel" alignment="CENTER" contentDisplay="CENTER" text="Label" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/Card2.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Monospaced Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="brickLabel" alignment="TOP_LEFT" contentDisplay="CENTER" text="Label" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/Card3.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Monospaced Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="woolLabel" alignment="CENTER" contentDisplay="CENTER" text="Label">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/Card5.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Monospaced Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="oreLabel" alignment="CENTER" contentDisplay="CENTER" text="Label" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/Card4.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Monospaced Bold" size="19.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</Pane>
